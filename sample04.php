@@ -19,8 +19,9 @@
 <h2>Practice</h2>
 <pre>
     <?php
-    $fruits=['ぶどう','apple'=>'りんご', 'mikann'=>'みかん'];
-    print($fruits[0]);
+    $news=file_get_contents('../../newsdata/news.txt','2018-10-17');
+    $news .= "追加\n";
+    file_put_contents('../../newsdata/news.txt', $news);
     ?>
 </pre>
 </main>

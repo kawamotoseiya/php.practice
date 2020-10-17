@@ -19,8 +19,12 @@
 <h2>Practice</h2>
 <pre>
     <?php
-    $fruits=['ぶどう','apple'=>'りんご', 'mikann'=>'みかん'];
-    print($fruits[0]);
+    $success=file_put_contents('../../newsdata/news.txt','2018-10-17');
+    if($success){
+        print('ファイルへの書き込みが成功しました');
+    }else{
+        print('失敗しました');
+    }
     ?>
 </pre>
 </main>

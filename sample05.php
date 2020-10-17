@@ -18,10 +18,10 @@
 <main>
 <h2>Practice</h2>
 <pre>
-    <?php
-    $fruits=['ぶどう','apple'=>'りんご', 'mikann'=>'みかん'];
-    print($fruits[0]);
-    ?>
+<?php
+$xmlTree= simplexml_load_file('');
+    print($xmlTree->channel->title);
+?>
 </pre>
 </main>
 </body>    
